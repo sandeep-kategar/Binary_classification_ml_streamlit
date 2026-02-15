@@ -18,11 +18,15 @@ def train_random_forest(data_path):
 
     # Initialize Random Forest model
     model = RandomForestClassifier(
-        n_estimators=200,
-        max_depth=8,
+        n_estimators=100,
+        max_depth=5,
+        min_samples_split=10,
+        min_samples_leaf=5,
+        max_features="sqrt",
         random_state=42,
         n_jobs=-1
     )
+
 
     # Train model
     model.fit(X_train, y_train)

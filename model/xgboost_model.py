@@ -18,15 +18,17 @@ def train_xgboost(data_path):
 
     # Initialize XGBoost model
     model = XGBClassifier(
-        n_estimators=200,
-        max_depth=4,
-        learning_rate=0.1,
-        subsample=0.8,
-        colsample_bytree=0.8,
+        n_estimators=100,
+        max_depth=3,
+        learning_rate=0.05,
+        subsample=0.7,
+        colsample_bytree=0.7,
+        reg_alpha=1,
+        reg_lambda=1,
         eval_metric="logloss",
-        random_state=42,
-        use_label_encoder=False
+        random_state=42
     )
+
 
     # Train model
     model.fit(X_train, y_train)
