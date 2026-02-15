@@ -57,13 +57,14 @@ F1 Score
 Matthews Correlation Coefficient (MCC)
 
 **5️) Model Comparison Table**
-ML Model	Accuracy	AUC	Precision	Recall	F1 Score	MCC
-Logistic Regression	0.8098	0.9298	0.7619	0.9143	0.8312	0.6309
-Decision Tree	0.8732	0.9326	0.8624	0.8952	0.8785	0.7465
-KNN	0.8634	0.9629	0.8738	0.8571	0.8654	0.7269
-Naive Bayes	0.8293	0.9043	0.8070	0.8762	0.8402	0.6602
-Random Forest	0.9220	0.9708	0.9009	0.9524	0.9259	0.8450
-XGBoost	0.8976	0.9692	0.8818	0.9238	0.9023	0.7957
+| ML Model            | Accuracy | AUC    | Precision | Recall | F1 Score | MCC    |
+| ------------------- | -------- | ------ | --------- | ------ | -------- | ------ |
+| Logistic Regression | 0.8098   | 0.9298 | 0.7619    | 0.9143 | 0.8312   | 0.6309 |
+| Decision Tree       | 0.8732   | 0.9326 | 0.8624    | 0.8952 | 0.8785   | 0.7465 |
+| KNN                 | 0.8634   | 0.9629 | 0.8738    | 0.8571 | 0.8654   | 0.7269 |
+| Naive Bayes         | 0.8293   | 0.9043 | 0.8070    | 0.8762 | 0.8402   | 0.6602 |
+| Random Forest       | 0.9220   | 0.9708 | 0.9009    | 0.9524 | 0.9259   | 0.8450 |
+| XGBoost             | 0.8976   | 0.9692 | 0.8818    | 0.9238 | 0.9023   | 0.7957 |
 
 **6️) Model-wise Observations**
 **Logistic Regression**
