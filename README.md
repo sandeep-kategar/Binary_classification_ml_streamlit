@@ -2,6 +2,9 @@
 
 BITS Pilani – M.Tech (AIML) – Machine Learning Assignment 2
 
+**Live Streamlit Application:**
+https://binaryclassificationmlapp-dza5vhgtlebsc5ltigymzv.streamlit.app/
+
 **1) Problem Statement**
 Heart disease is one of the leading causes of mortality worldwide. Early detection of heart disease can significantly improve patient outcomes and reduce medical risks.
 The objective of this project is to build and compare multiple machine learning classification models to predict the presence or absence of heart disease based on clinical attributes.
