@@ -16,6 +16,41 @@ st.set_page_config(page_title="Heart Disease Classification App", layout="wide")
 st.title("💓 Heart Disease Classification using Machine Learning")
 st.write("This application compares multiple ML models for heart disease prediction.")
 
+st.subheader("📥 Download Sample Test Dataset")
+
+# Generate sample dataset template
+def generate_sample_csv():
+    sample_data = {
+        "age": [52, 45],
+        "sex": [1, 0],
+        "cp": [0, 2],
+        "trestbps": [125, 130],
+        "chol": [212, 250],
+        "fbs": [0, 1],
+        "restecg": [1, 0],
+        "thalach": [168, 150],
+        "exang": [0, 1],
+        "oldpeak": [1.0, 2.3],
+        "slope": [2, 1],
+        "ca": [2, 0],
+        "thal": [3, 2],
+        "target": [1, 0]
+    }
+
+    return pd.DataFrame(sample_data)
+
+sample_df = generate_sample_csv()
+
+csv = sample_df.to_csv(index=False).encode("utf-8")
+
+st.download_button(
+    label="Download Sample Test CSV",
+    data=csv,
+    file_name="sample_test.csv",
+    mime="text/csv",
+)
+
+
 # -----------------------------
 # CSV Upload
 # -----------------------------
